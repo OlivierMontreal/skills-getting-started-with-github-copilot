@@ -160,8 +160,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -172,6 +172,21 @@ footer {
   border-radius: 4px;
   font-size: 14px;
   color: #003a63;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.delete-icon:hover {
+  background-color: rgba(198, 40, 40, 0.1);
 }
 
 /* When there are no participants, show subtle italic text */
